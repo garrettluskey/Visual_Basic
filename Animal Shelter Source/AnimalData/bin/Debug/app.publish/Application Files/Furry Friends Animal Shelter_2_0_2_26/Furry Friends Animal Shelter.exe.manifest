@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Furry Friends Animal Shelter.exe" version="2.0.2.26" publicKeyToken="d3d30d2286830307" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Paw.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Furry Friends Animal Shelter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Furry Friends Animal Shelter.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.SqlServer.Types" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Furry Friends Animal Shelter.exe" size="1006568">
+      <assemblyIdentity name="Furry Friends Animal Shelter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>O3Vkg+JGl9miXzEQBNSj+qNEOu5z+QivNhZHXVRq2gM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AllData.mdf" size="3211264" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>55KaywwPYM271Uc+FDrGHAyZSoCdGHXoePuSdSsZzlU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="AllData_log.ldf" size="802816" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tiXl3HVdg5BD0K/Fw570z06ZenGrRAvpasmxQKdQxHI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Furry Friends Animal Shelter.exe.config" size="569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UWv+ByJMk9RTFR5AjZ60oQJLe8sFXuBsGf/5wNlIvSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ImgMenu.png" size="6316">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6vZjyEXL12eqbp568KrqUYv3M6MSeicGDbw6iKOhaTs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Paw.ico" size="8711">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/VLCeyBf1jIYNPvKCmfgwpmw5IwN4jDcpNe3Mp+lXjI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Paw32x32.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y9oToRPeffB0Nfl4DtiXfQfEF7ziKBMQVMIGtT4I2CQ=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=GARRETT-LUSKEY\Garrett" issuerKeyHash="848101fa302be23f1ca6c13737cd32c11ad81fb1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>T7kk+E3J0s+mjMYspgA26MA8sEwIAIJwMoOsv6pnVcs=</DigestValue></Reference></SignedInfo><SignatureValue>WVGyJI9tq82jiJB23yCJ1LbInbShBgj2EEOfUzQejKbiOkeq+2b65qjMnF7VUICyfa8PCf5RSZUZCBRJOO1T1B1Wjk7Rch7os51HqOKcH3AWVzkR05p/iOfh5VrZ4D+FNu/QO29RkFSR734QBmwZP7uZsP/5dlxKu4j/6epOEgY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5Agsu3EPFTGQBAkpEorvi0ow8MbPAr7m6yRPoMddOl/nsnA7eNA8W2fuIuAXF5sPybsboIbrjdRa5HN4qZ4FrpVqcju41YT07X2n7WmoJ+GOgxnt7eANtEESVncAMPBv+DEJ3I1YnoIp1ZeK9S5bsi4Qenp+6Go+nZDRz97FGDs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="cb5567aabfac8332708200084cb03cc0e83600a62cc68ca6cfd2c94df824b94f" Description="" Url=""><as:assemblyIdentity name="Furry Friends Animal Shelter.exe" version="2.0.2.26" publicKeyToken="d3d30d2286830307" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GARRETT-LUSKEY\Garrett</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hIW3RE5WrTRH/XOjv9UaxxQLOp98qD95wVyTn0zxJpA=</DigestValue></Reference></SignedInfo><SignatureValue>Gt9N3WlhvWY788hogM+tRUJDy7xZa+Y+woTUJbo3lKI1W+2Y0ZyJoqqTcc3jv8tne/FY02SDX/pr4QITAogHwAcatsjXIgmv6h483SgEQQ64o932fQKx6XYev1f3/3FmSxIQ9m5VcEA6RaWaWqRtRCd5S8yUdgrIqpAc1P8yIeE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5Agsu3EPFTGQBAkpEorvi0ow8MbPAr7m6yRPoMddOl/nsnA7eNA8W2fuIuAXF5sPybsboIbrjdRa5HN4qZ4FrpVqcju41YT07X2n7WmoJ+GOgxnt7eANtEESVncAMPBv+DEJ3I1YnoIp1ZeK9S5bsi4Qenp+6Go+nZDRz97FGDs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQENh0Iu5swK1LFZECoIsEuzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARwBBAFIAUgBFAFQAVAAtAEwAVQBTAEsARQBZAFwARwBhAHIAcgBlAHQAdDAeFw0xNTAzMDIyMTA3MzBaFw0xNjAzMDIwMzA3MzBaMDcxNTAzBgNVBAMeLABHAEEAUgBSAEUAVABUAC0ATABVAFMASwBFAFkAXABHAGEAcgByAGUAdAB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkCCy7cQ8VMZAECSkSiu+LSjDwxs8CvubrJE+gx106X+eycDt40DxbZ+4i4BcXmw/JuxughuuN1Frkc3ipngWulWpyO7jVhPTtfaftaagn4Y6DGe3t4A20QRJWdwAw8G/4MQncjVieginVl4r1LluyLhB6en7oaj6dkNHP3sUYOwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKdIQb6ZUoM2NaRMUNgPcrBcCaHxJcy+w8E7djnHvMlBe/DEJiswJ+2SgEFvrGJIyM232P3ADkuEjklYSFOPAUtj+2betRSFzGooQY2ViTe6BVe0+oS7XtZKyI7eG8JdYU5xlPSlz32XEA5vcLkdREyvwp4T5ncUip5FH2G/SKCV</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

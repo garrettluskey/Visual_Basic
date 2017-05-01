@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6C1389C-8B42-4F10-A6F8-41BC10AEB74C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FurryFriendsAnimalShelter.My.MyApplication</StartupObject>
+    <RootNamespace>FurryFriendsAnimalShelter</RootNamespace>
+    <AssemblyName>Furry Friends Animal Shelter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\My\Desktop\New folder\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>26</ApplicationRevision>
+    <ApplicationVersion>2.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Furry Friends Animal Shelter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Furry Friends Animal Shelter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F3A4C5A9C411319B574A6197A174B8D4C8FE6819</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AnimalData_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Paw.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllDataDataSet.vb">
+      <DependentUpon>AllDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.Designer.vb">
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryReportOptions.Designer.vb">
+      <DependentUpon>InventoryReportOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryReportOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalCostReportOptions.Designer.vb">
+      <DependentUpon>TotalCostReportOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TotalCostReportOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalCostReportViewer.Designer.vb">
+      <DependentUpon>TotalCostReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TotalCostReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndividualReportSelectForm.Designer.vb">
+      <DependentUpon>IndividualReportSelectForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualReportSelectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryReportViewer.Designer.vb">
+      <DependentUpon>InventoryReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.vb">
+      <DependentUpon>ReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm.Designer.vb">
+      <DependentUpon>OtherForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.vb">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicInfoForm.Designer.vb">
+      <DependentUpon>BasicInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BasicInfoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DogInfoForm.Designer.vb">
+      <DependentUpon>DogInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DogInfoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatInfoForm.Designer.vb">
+      <DependentUpon>CatInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CatInfoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEdit.Designer.vb">
+      <DependentUpon>formEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CostReportBW.rdlc" />
+    <EmbeddedResource Include="CostReportColor.rdlc" />
+    <EmbeddedResource Include="CatDogReportColor.rdlc" />
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryReportOptions.resx">
+      <DependentUpon>InventoryReportOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalCostReportOptions.resx">
+      <DependentUpon>TotalCostReportOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalCostReportViewer.resx">
+      <DependentUpon>TotalCostReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndividualReportSelectForm.resx">
+      <DependentUpon>IndividualReportSelectForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryColor.rdlc" />
+    <EmbeddedResource Include="InventoryReportViewer.resx">
+      <DependentUpon>InventoryReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ocean Example.rdlc" />
+    <EmbeddedResource Include="OtherClientReportColor.rdlc" />
+    <EmbeddedResource Include="TotalExpencesReportColor.rdlc" />
+    <EmbeddedResource Include="TotalExpencesReportBW.rdlc" />
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm.resx">
+      <DependentUpon>OtherForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicInfoForm.resx">
+      <DependentUpon>BasicInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DogInfoForm.resx">
+      <DependentUpon>DogInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatInfoForm.resx">
+      <DependentUpon>CatInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEdit.resx">
+      <DependentUpon>formEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherClientReportBW.rdlc" />
+    <EmbeddedResource Include="CatDogReportBW.rdlc" />
+    <EmbeddedResource Include="InventoryBW.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AllDataDataSet.xsc">
+      <DependentUpon>AllDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>AllDataDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="AllDataDataSet.xss">
+      <DependentUpon>AllDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnimalData_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllData.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AllData_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AllData.mdf</DependentUpon>
+    </Content>
+    <Content Include="ImgMenu.png" />
+    <Content Include="Paw.ico" />
+    <Content Include="Paw32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.11.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Report Viewer 2012 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2012 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2012 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
